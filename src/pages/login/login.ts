@@ -23,6 +23,7 @@ export class LoginPage {
       localizedReason: 'Please authenticate' // somente ios
     })
       .then((result: any) => {
+        alert(JSON.stringify(result));
         this.navCtrl.push('HomePage');
       })
       .catch((error: any) => {
